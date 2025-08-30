@@ -1,0 +1,31 @@
+ident: "client-service"
+pod_id: "8a96a2d8-fd86-45de-9a66-458f9d7158e3"
+
+log:
+  filter: 0
+  caller: true
+  output: "output"
+
+nats:
+  address:
+    - http://139.180.147.194:4222
+    - http://139.180.147.194:4223
+    - http://139.180.147.194:4224
+  username: ""
+  password: ""
+  token: "mysecrettoken"
+
+redis:
+  address: "139.180.147.194:8765"
+  password: "password"
+  db: 0
+
+web:
+  prefix: "/v1"
+  address: "0.0.0.0:9000"
+
+telegram:
+  domain: "https://api.telegram.org"
+  token: "7692357448:AAEUv-DIzVPcUSMYBDPxsj9E9T9ucvXZ3og"
+  webhook: "https://www.bbcsl.sbs/v1/webhook"
+  secret_token: "HqtSB45SDq"
